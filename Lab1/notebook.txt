@@ -1,0 +1,8 @@
+Date  Who       Start Stop  Interruptions Question TimeOnTask    Comments
+4/14  zgs	19:07 20:03 0		  Chal	   25		 Challenge Problem
+4/14  zgs	19:47 20:03 0		  7        15		 Problem 7
+
+
+Total Time On Challenge Problem (minutes)        25
+Total Time On Problem 7 (minutes)		 15
+============committing to git: 4/14 20:14 ===================
