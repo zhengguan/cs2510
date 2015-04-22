@@ -41,8 +41,7 @@ class Book{
 	// RETURNS: true iff this Book is written by the same Author as the
 	// given book
 	boolean sameAuthor(Book that) {
-		return this.author.name == that.author.name
-			&&	this.author.yob == that.author.yob;
+		return this.author.sameAuthor(that.author);
 	}
 }
 
@@ -55,8 +54,21 @@ class Author {
 		this.yob = yob;
 	}
 	
+	/* TEMPLATE
+	   Fields:
+	   ... this.name ... -- String
+	   ... this.yob ... -- int
+	   
+	   Methods:
+	   ... this.sameAuthor(Author) ... -- boolean
+	 */
+	
 	// GIVEN: a Author that
 	// RETURNS: true iff this Author is the same as that Author
+	boolean sameAuthor(Author that) {
+		return this.name.equals(that.name) &&
+			   this.yob == that.yob;
+	}
 }
 
 // examples and tests for the classes that represent books and authors
@@ -82,5 +94,13 @@ class ExampleBooksAuthors{
 	boolean testSameBookAuthor(Tester t) {
 		return t.checkExpect(this.beaches.sameAuthor(this.prince),true);
 			&& t.checkExpect(this.beaches.sameAuthor(this.code), false);
+	}
+	
+	// rest the method sameAuthro in the calss Author
+	boolean testSameAuthor(Tester t) {
+		return t.checkExpect(
+				this.pat.sameAuthor(new Author("Pat Conroy", 1948)),
+				true)
+			&& t.checkExpect(this.pat.sameAuthor(this.dan), false);
 	}
 }

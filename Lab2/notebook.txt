@@ -1,0 +1,14 @@
+Date  Who       Start Stop  Interruptions Question TimeOnTask    Comments
+4/22  zgs       06:34 06:52               1        17            Lab2
+4/22  zgs       07:00 07:28               2        28            Lab2
+4/22  zgs       07:38 07:47               3        8             Lab2
+4/22  zgs       08:11 08:42               3        30            Lab2
+4/22  zgs       19:40 20:05               4        25            Lab2
+4/22  zgs       21:08 21:45               4        37            Lab2h
+
+
+
+
+Total Time On Task Q1 (minutes)                  148 
+TOTQ1 (hours and tenths)                         2.46
+============committing to git: 4/22 21:50 ===================
